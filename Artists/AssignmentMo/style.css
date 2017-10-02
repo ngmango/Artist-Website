@@ -1,0 +1,157 @@
+
+/* Beginning of main CSS for Assignment One - CSS for following pages is mentioned below */
+
+@media (max-width: 700px) and (min-width: 500px) {
+    body {
+        color: blue;
+        font-size: 20px;
+
+    
+    }
+}
+
+@media (max-width: 227px) {
+    .btn{
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 395px) {
+    .jumbotron {
+        background-size: contain;
+    }
+}
+ 
+
+
+
+img {
+    width: 100%;
+    border: 5px solid firebrick;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 5%;
+}
+
+.header {
+    color: red;
+    font-family: cursive;
+}
+
+body {
+    font-size: 6px;
+    text-align: center;
+}
+
+p.bio {
+    color: sienna;
+    font-family: cursive;
+}
+
+.bhead {
+    font-size: 4.5em;
+    color: greenyellow;
+}
+
+.bio {
+    font-size: 2em;
+}
+
+.container-fluid {
+    background-color: seashell;
+}
+
+.section-2 {
+    display: inline-block;
+}
+
+.one .jumbotron {
+    background-image: url("http://3.bp.blogspot.com/-4lu0KBnkdjg/U3iEFq66xUI/AAAAAAAAAxM/ZBVXcHHDnCU/s1600/linkin-park-wallpaper-2013-788.jpg");
+    background-size: cover;
+    background-color: seashell;
+    padding-bottom: 395px;
+    background-position: right center;
+
+}
+
+.one {
+    background-color: seashell;
+}
+
+body {
+    background-color: seashell;
+}
+
+.albums-head {
+    font-size: 3em;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: orangered;
+}
+
+navbar-inverse .navbar-brand {
+    color: slategrey;
+}
+
+.btn {
+    width: auto;
+    height: 0 auto;
+    margin: 0 auto;
+}
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+    font-size: 3em;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 3em;
+    line-height: inherit;
+}
+
+#result {
+    font-size: 3em;
+}
+
+.jumbotron {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 33px;
+    background-color: lightgreen;
+    color: brown;
+    font-family: cursive;
+}
+
+
+/*CSS for Website 2 (Mo Bio)*/ 
+
+.h2 {
+    color: sienna;
+}
+
+.bio2 {
+    color: cadetblue;
+}
+
+.new {
+color: black;
+font-size: 20px;
+}
+
+.mtm {
+    font-size: 1.8em;
+}
+
+.ht {
+    font-size: 1.86em;
+}
+
+.met {
+    font-size: 2.0em;
+}
