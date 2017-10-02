@@ -6,26 +6,64 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Will Smith Fan Page</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel ="stylesheet" type ="text/css" href ="website.css">
+    <link rel ="stylesheet" type ="text/css" href ="./website.css">
+    
 </head>
 <body>
     <a class="btn btn-primary" href="../index.html"role="button">Home</a>
+    <a class="btn btn-primary" href="./lower/htm.html"role="button">Videos</a>
+    <a class="btn btn-primary" href="./lower/aboutme.html"role="button">About the Author</a>
     
-    <div class="container-fluid">
-        <h1>Will Smith Fan Page!!</h1>
+    <div class="container-fluid col-12">
+        <h1 align="center" class="hello">Will Smith Fan Page</h1>
     </div>
-    <div class="container-fluid">
+    <div align="center" class="container-fluid col-12">
         <div class="row col-xs-4 col-s-4 col-md-4 col-lg col-xl-4">
-            <img class= "img-responsive" style="max-height: 250px" src=Will_Smith.jpg>
+            <img class= "img img1" id= "img1" style="max-height: 250px" src=Will_Smith.jpg>
         </div>
         <div class="row col-xs-4 col-s-4 col-md-4 col-lg col-xl-4">
-            <img class= "img-responsive" style="max-height: 250px" src=fresh-prince-of-bel-air.jpg>
+            <img class= "img img1" id ="img1 img2" style="max-height: 250px" src=fresh-prince-of-bel-air.jpg>
         </div>
         <div class="row col-xs-4 col-s-4 col-md-4 col-lg col-xl-4">
-            <img class= "img-responsive" style="max-height: 250px" src=NizTUHb.jpg>
+            <img class= "img img1" id="img1" style="max-height: 250px" src=NizTUHb.jpg>
         </div>
     
     </div>
+
+   <div class='container-fluid col-12'>
+        <p class="p1"> Will Smith was born on September 25th 1968, in West Philadelphia, where he was raised. 
+            He first came into the spotlight in the late 80's with his friend and collaborator, DJ Jazzy Jeff.
+            However, it wasn't until 1990, when Will starred in the hit sitcom The Fresh Prince, where Will's fame 
+            really took off. Smith started his solo career in the mid 90's, with his hit song "Men in Black" from the motion picture 
+            of the same name, which Will also starred in. Will has gone on to star in many more Blockbusters over the last 20 years, 
+            becoming one of the biggest movie stars of our generation, and one of the most bankable actors ever.
+        </p>   
+    
+    
+    </div> 
+
+    <div class='container-fluid col-12 fa'>
+        <h2>
+            Albums
+        </h2>
+        <ul>
+            <li>Big Willie Style</li>
+            <li>Willenium</li>
+            <li>Born to Reign</li>
+            <li>Lost and Found</li>
+        </ul>
+    </div>
+    <form align="center">
+
+        <textarea id="words" cols="60" rows="6">Enter Comment
+        </textarea>
+        <input type="button" onclick="getwords()" value="Enter"/> <br>
+        <p id="paragraph">
+        </p>
+    </form>
+    
+
+    <a class="btn btn-primary" href="http://www.willsmith.com/"role="button">Take me to Will</a>
 
     <script
         src="https://code.jquery.com/jquery-3.2.1.js"
@@ -36,6 +74,8 @@
     <script 
         src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
     </script>
-
+    <script 
+        type="text/javascript" src="./website.js">
+    </script>
 </body>
 </html>
