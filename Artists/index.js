@@ -1,16 +1,39 @@
+
+// wait for document to load before running JS scripts
 $( document ).ready(function() {
-    $('#comments-container').comments({
-        profilePictureURL: 'https://app.viima.com/static/media/user_profiles/user-icon.png',
-        getComments: function(success, error) {
-            var commentsArray = [{
-                id: 1,
-                created: '2015-10-01',
-                content: 'Lorem ipsum dolort sit amet',
-                fullname: 'Simon Powell',
-                upvote_count: 2,
-                user_has_upvoted: false
-            }];
-            success(commentsArray);
-            }
+    
+    //animate main image on hover
+    $("#title-image").hover(function(){
+        $(this).stop().animate({
+            opacity: '0.4'}, 500, //scroll to bio section after animation
+                function scroll_to(div){
+                    $('html, body').stop().animate({
+                        scrollTop: $(".bio").offset().top},400, 
+                    );
+                }
+        );
     });
+
+    //toggle highlight on hover over albums
+    $(".fade-on-hover").hover(function(){
+        $(this).stop().animate({ opacity: '0.4' }, 10);
+    },
+        function() {
+        $(this).stop().animate({ opacity: '1.0' }, 10);
+
+    })
+
+    //append new comments to comments section
+    $("#submit").click(function(){
+        var name = $("#name").val()
+        var commenttext = $("#comment-box").val()
+
+        if ((name && commenttext) !== ''){
+            $(".previous-comments").prepend($("<div class='previous-comment'><p>" + commenttext + "</p>" + "<p><i>Posted by " + name + ", " + Date().toLocaleString() + "</i></p></div>"));
+            
+            //clear comment box values
+            $("#name").val('');
+            $("#comment-box").val('');
+        }
+    })
 });
