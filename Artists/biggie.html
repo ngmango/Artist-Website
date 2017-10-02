@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!--Notorious B.I.G. tribute website created by Nathan Devey-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,43 +16,97 @@
         integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
         crossorigin="anonymous">
     </script>
-    <link rel="stylesheet" type="text/css" href="jquery-comments-master/css/jquery-comments.css">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-    <a href="../index.html">Home</a>
-    
-    <div class="container">
-                
+    <div class="container-wrap">
+        
+        <!-- add a section for title and main image 
+        NOTE:  The text in this section is set to change colour and size using media queries-->
         <div class="main-image">
-            <img src="Notorious-BIG.jpg" alt="Notorious B.I.G">
-            <div class="title">Notorious B.I.G.</div>
+            <img src="Notorious-BIG.jpg" alt="Notorious B.I.G" id="title-image">
+            <div class="title">
+                <p>Notorious B.I.G.</p>
+            </div>
         </div>
         
-        <p>Christopher George Latore Wallace (May 21, 1972 – March 9, 1997), better known by his stage names The Notorious B.I.G., Biggie, or Biggie Smalls, was an        American rapper. He is ranked by Billboard magazine as among the ten greatest rappers of all time.
-        </p>
+        <!-- add a nav bar below main image -->
+        <div class="nav-bar">
+            <div class="nav-button-2 col-xs-6">
+                <a href="tribute.html"><p>everlasting tribute</p></a>
+            </div>
+            <div class="nav-button-1 col-xs-6">
+                <a href="about.html"><p>about the author</p></a>
+            </div>
+        </div>
+
+        <!-- add a section for artist bio with links to Wikipedia and artist's webpage -->
+        <div class="bio jumbotron">
+            <h2>The Life and Times</h2>
+            <p>Christopher George Latore Wallace (May 21, 1972 – March 9, 1997), better known by his stage names The Notorious B.I.G., Biggie, or Biggie Smalls, was an American rapper. He is ranked by Billboard magazine as among the ten greatest rappers of all time.
+            </p>
+            
+            <p>Wallace was raised in the Brooklyn borough of New York City. When he released his debut album Ready to Die in 1994, he became a central figure in the East Coast hip hop scene and increased New York City's visibility in the genre at a time when West Coast hip hop was dominant in the mainstream. The following year, Wallace led his childhood friends to chart success through his protégé group, Junior M.A.F.I.A. While recording his second album, Wallace was heavily involved in the growing East Coast–West Coast hip hop feud.
+            </p>
+            
+            <p>On March 9, 1997, Wallace was killed by an unknown assailant in a drive-by shooting in Los Angeles. His double-disc album Life After Death, released 16 days later, rose to No. 1 on the U.S. album charts and was certified Diamond in 2000 by the Recording Industry Association of America, one of the few hip hop albums to receive this certification. Wallace was noted for his "loose, easy flow", dark semi-autobiographical lyrics and storytelling abilities,sometimes changing his pitch on songs. Three more albums have been released since his death. He has certified sales of 17 million units in the United States.
+            </p>
+            <p>Source: <a href="https://en.wikipedia.org/wiki/The_Notorious_B.I.G." target="_blank">Wikipedia.org</a></p>
+
+            <p>For more information on Biggie's legacy, visit his <a href="https://www.facebook.com/NotoriousBIG/" target="_blank">Facebook page</a>.</p>
+
+        </div>
         
-        <p>Wallace was raised in the Brooklyn borough of New York City. When he released his debut album Ready to Die in 1994, he became a central figure in the East      Coast hip hop scene and increased New York City's visibility in the genre at a time when West Coast hip hop was dominant in the mainstream. The following year,  Wallace led his childhood friends to chart success through his protégé group, Junior M.A.F.I.A. While recording his second album, Wallace was heavily involved   in the growing East Coast–West Coast hip hop feud.
-        </p>
-        
-        <p>On March 9, 1997, Wallace was killed by an unknown assailant in a drive-by shooting in Los Angeles. His double-disc album Life After Death, released 16 days    later, rose to No. 1 on the U.S. album charts and was certified Diamond in 2000 by the Recording Industry Association of America, one of the few hip hop         albums to receive this certification. Wallace was noted for his "loose, easy flow", dark semi-autobiographical lyrics and storytelling abilities, sometimes      changing his pitch on songs. Three more albums have been released since his death. He has certified sales of 17 million units in the United States.
-        </p>
-        <p>Source: Wikipeda.org</p>
+        <!-- add a section for album covers, using Bootstrap grid for resizing and anchors to link to Google Play Music -->
+        <div class="studio-albums container-fluid">
+            <h2>Studio Albums (click to play!)</h2>
+            <div class="album-images row">
+                <div class="ready-to-die fade-on-hover col-xs-12 col-sm-6 col-md-4 ">
+                    <a href="https://play.google.com/music/listen#/album/B5j3pb6rlqiedszypremwdtlvii/The+Notorious+B.I.G./Ready+To+Die+The+Remaster"  target="_blank"><img src="./album-covers/ready-to-die.jpg" alt="Ready to Die album cover"></a>
+                </div>
+                <div class="life-after-death fade-on-hover col-xs-12 col-sm-6 col-md-4 ">
+                    <a href="https://play.google.com/music/listen#/album/Buy5cr4diyvadqg4yz4f5dwwmlm/The+Notorious+B.I.G./Life+After+Death+(Remastered+Edition)" target="_blank"><img src="./album-covers/life-after-death.jpg" alt="Life After Death album cover"></a>
+                </div>
+                <div class="conspiracy fade-on-hover col-xs-12 col-sm-6 col-md-4 ">
+                    <a href="https://play.google.com/music/listen#/album/Bse42zwlmd5pn26y4oftj7hxxde/Junior+M.A.F.I.A./Conspiracy" target="_blank"><img src="./album-covers/conspiracy.jpg" alt="Conspiracy album cover"></a>
+                </div>
+                <div class="born-again fade-on-hover col-xs-12 col-sm-6 col-md-4 ">   
+                    <a href="https://play.google.com/music/listen#/album/B5s3n2pvpve2b5xabydjuxtcbxy/The+Notorious+B.I.G./Born+Again" target="_blank"><img src="./album-covers/born-again.jpg" alt="Born Again album cover"></a>
+                </div>
+                <div class="duets fade-on-hover col-xs-12 col-sm-6 col-md-4 ">
+                    <a href="https://play.google.com/music/listen#/album/Bnb4tl7vm7njkhskyqfuigpcp54/The+Notorious+B.I.G./Duets%3A+The+Final+Chapter" target="_blank"><img src="./album-covers/duets.jpg" alt="Duets: The Final Chapter album cover"></a>
+                </div>
+                <div class="the-king-and-i fade-on-hover col-xs-12 col-sm-6 col-md-4 ">
+                    <a href="https://play.google.com/music/listen#/album/B57g7avnzmtsu5jkgfsi3h4mg6e/Faith+Evans+%26+The+Notorious+B.I.G./The+King+%26+I" target="_blank"><img src="./album-covers/the-king-and-i.jpg" alt="The King &amp; I album cover"></a>
+                </div>
+            </div>
+        </div>
 
-        <h2>Albums</h2>
+        <!-- add a comments section in the HTML -->
+        <div class="comment-section">
+            <div class="comments-title">
+                <h2>Leave a comment in his memory</h2>
+            </div>
+            
+            <div class="commenter-name">
+                <p>Name</p>
+                <input type="text" id="name">
+            </div>
 
-        <img src="ready-to-die.jpg" alt="Ready to Die album cover">
-        <img src="life-after-death.jpg" alt="Life After Death album cover">
-        <img src="conspiracy.jpg" alt="Conspiracy album cover">
-        <img src="born-again.jpg" alt="Born Again album cover">
-        <img src="duets.jpg" alt="Duets: The Final Chapter">
-        <img src="the-king-and-i.jpg" alt="The King &amp; I">
+            <div class="comment-box">
+                <p>Comment</p>
+                <textarea name="" id="comment-box" cols="120" rows="10"></textarea>
+            </div>
 
-        <a href="https://www.facebook.com/NotoriousBIG/">Notorious B.I.G. online</a>
+            <div class="submit">
+                <button class="btn btn-outline-secondary" id="submit">Submit</button>
+            </div>
+
+            <div class="previous-comments">
+            </div>
+        </div>
     </div>
     
     <script type="text/javascript" src="./index.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script type="text/javascript" src="jquery-comments-master/js/jquery-comments.js"></script>
 </body>
 </html>
